@@ -537,6 +537,100 @@
                 margin-bottom: 30px;
             }
         }
+        #education {
+            padding: 40px;
+            background-color: var(--primary-bg); /* Navy background */
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        #education h2 {
+            font-size: 28px;
+            color: var(--accent-color); /* Yellow heading */
+            margin-bottom: 30px;
+        }
+
+        .education-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .education-box {
+            background-color: var(--accent-hover); /* Normal yellow box */
+            padding: 20px;
+            width: 300px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(255, 215, 0, 0.4);
+            transition: transform 0.3s ease;
+            color: #000; /* Black text inside yellow box */
+        }
+
+        .education-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .education-box h3,
+        .education-box p {
+            color: #000; /* Black text */
+            margin: 5px 0;
+        }
+        /* Contact Section */
+        #contact {
+            padding: 60px 0;
+            text-align: center;
+            font-family: 'Segoe UI', sans-serif;
+            background: none;
+        }
+
+        #contact h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #f1c40f; /* Yellow title */
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 60px;
+        }
+
+        .contact-links a {
+            text-decoration: none;
+            color: #f1c40f; /* Yellow text */
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all 0.3s ease;
+
+        }
+
+        .contact-links a i {
+            font-size: 38px;
+            margin-bottom: 10px;
+            color: #f1c40f; /* Yellow icons */
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .contact-links a span {
+            color: #f1c40f;
+            font-weight: 500;
+        }
+
+        .contact-links a:hover {
+            transform: scale(1.1);
+        }
+
+        .contact-links a:hover i {
+            color: #ffe600; /* Lighter yellow on hover */
+        }
+
+        .contact-links a:hover span {
+            color: #ffe600;
+        }
     </style>
 </head>
 <body>
@@ -567,87 +661,46 @@
                     <a href="resume.pdf" class="btn-resume" target="_blank" download>Resume</a>
                 </div>
                 <div class="hero-image">
-				<img src="profilepicture.jpg" alt="Profile Picture" style="width:400px; height:400px; object-fit: cover;">
+                <img src="images/profilepicture.jpg" alt="Profile Picture" style="width:400px; height:400px; object-fit: cover;">
                 </div>
             </div>
         </section>
         <section id="about" class="section">
             <div class="about-grid">
-			<section id="about" class="section">
+            <section id="about" class="section">
             <h2>About Me</h2>
             <p>"I am currently in my final year of Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning. Over the past few years, I have gained knowledge in areas like coding, data analysis, and machine learning techniques. I have also worked on interesting projects related to image processing and predictive models. I’m eager to apply what I’ve learned and explore more opportunities in the field of AI and ML."and My goal is to contribute meaningfully to impactful projects and continually grow as a developer.</p>
         </section>
-		<section id="education">
-  <h2>Education</h2>
-  <div class="education-container">
-    <div class="education-box">
-      <h3>SR University</h3>
-      <p><strong>Degree:</strong> B.Tech in CSE AIML </p>
-      <p><strong>Year:</strong> 2022 - 2026</p>
-      <p><strong>CGPA:</strong> 7.9/10 </p>
-    </div>
+        <section id="education">
+          <h2>Education</h2>
+          <div class="education-container">
+            <div class="education-box">
+              <h3>SR University</h3>
+              <p><strong>Degree:</strong> B.Tech in CSE AIML </p>
+              <p><strong>Year:</strong> 2022 - 2026</p>
+              <p><strong>CGPA:</strong> 7.9/10 </p>
+            </div>
 
-    <div class="education-box">
-      <h3>Sri Nalanda Junior College</h3>
-      <p><strong>Stream:</strong> MPC</p>
-      <p><strong>Year:</strong> 2020 - 2022</p>
-      <p><strong>Percentage:</strong> 60.7 </p>
-    </div>
+            <div class="education-box">
+              <h3>Sri Nalanda Junior College</h3>
+              <p><strong>Stream:</strong> MPC</p>
+              <p><strong>Year:</strong> 2020 - 2022</p>
+              <p><strong>Percentage:</strong> 60.7 </p>
+            </div>
 
-    <div class="education-box">
-      <h3>DAV High School</h3>
-      <p><strong>Board:</strong> SSC</p>
-      <p><strong>Year:</strong> 2019 - 2020</p>
-      <p><strong>GPA:</strong> 10/10 </p>
-    </div>
-  </div>
-</section>
-
-<style>
-  #education {
-    padding: 40px;
-    background-color: #0A192F; /* Navy background */
-    border-radius: 12px;
-    text-align: center;
-  }
-
-  #education h2 {
-    font-size: 28px;
-    color: #FFD700; /* Yellow heading */
-    margin-bottom: 30px;
-  }
-
-  .education-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .education-box {
-    background-color:#CC9900; /* Normal yellow box */
-    padding: 20px;
-    width: 300px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.4);
-    transition: transform 0.3s ease;
-    color: #000; /* Black text inside yellow box */
-  }
-
-  .education-box:hover {
-    transform: translateY(-5px);
-  }
-
-  .education-box h3,
-  .education-box p {
-    color: #000; /* Black text */
-    margin: 5px 0;
-  }
-</style>
-
+            <div class="education-box">
+              <h3>DAV High School</h3>
+              <p><strong>Board:</strong> SSC</p>
+              <p><strong>Year:</strong> 2019 - 2020</p>
+              <p><strong>GPA:</strong> 10/10 </p>
+            </div>
+          </div>
+        </section>
+            </div>
+        </section>
         <section id="skills" class="section">
             <div class="skills-grid">
-			<section id="skills" class="section">
+            <section id="skills" class="section">
     <h2>My Skills</h2>
     <div class="skills-grid">
         <div class="skill-item"><i class="fas fa-code skill-icon" style="color:#A8B9CC;"></i><span>C</span></div>
@@ -669,40 +722,40 @@
             </div>
         </section>
         <section id="experience" class="section">
-		<div class="experience-grid">
-			<section id="experience" class="section">
+        <div class="experience-grid">
+            <section id="experience" class="section">
             <h2>Experience</h2>
             <div class="experience-item">
                 <h3>Data Science & Analytics Intern</h3>
-                <p> Proxenix | June 2025 - july 2025</p>
+                <p> Proxenix | June 2025 - July 2025</p>
                 <ul>
-				    <li>Collected and cleaned data to make it ready for analysis.</li>
+                    <li>Collected and cleaned data to make it ready for analysis.</li>
                     <li>extracted meaningful information and insights by applying various algorithms preprocessing and scientific methods on structured and unstructured data.</li>
                     <li>Developed predictive models to solve real-world problems.</li>
                     <li>Collaborated with cross-functional teams to deliver data-driven solutions.</li>
-					<li>Gained hands-on experience with Python, SQL, and data visualization tool</li>
+                    <li>Gained hands-on experience with Python, SQL, and data visualization tool</li>
                 </ul>
-				<img src="proxenixlogo.jpg" alt="Company Logo" style="width:150px; height:auto; margin-top:10px;">
+                <img src="images/proxenixlogo.jpg" alt="Company Logo" style="width:150px; height:auto; margin-top:10px;">
             </div>
         </section>
         <section id="projects" class="section">
-		<div class="projects">
-			<section id="projects" class="section">
+        <div class="projects">
+            <section id="projects" class="section">
             <h2>Projects</h2>
             <div class="project-item">
-			    <h3>Obstacle Race</h3>
+                <h3>Obstacle Race</h3>
                 <p>An obstacle race project using Arduino that navigates a path by detecting and avoiding obstacles with sensors.</p>
                 <h4>Technologies Used:</h4>
                 <p>Aurdino</p>
-				<img src="uv24tzgm.png" style="width:48%; display:inline-block;"> <img src="rc3qz6dm.png" style="width:48%; display:inline-block;">
-			</div>
-			<div class="project-item">
+                <img src="images/uv24tzgm.png" style="width:48%; display:inline-block;"> <img src="images/rc3qz6dm.png" style="width:48%; display:inline-block;">
+            </div>
+            <div class="project-item">
                 <h3>MOVIE TICKET BOOKING SYSTEM. </h3>
                 <p>A Movie Ticket Booking System enables users to conveniently reserve seats for movies at their preferred theaters and showtimes.</p>
                 <h4>Technologies Used:</h4>
                 <p>C, Files</p>
-				<img src="movieticketsonlinebooking_11zon.jpg" alt="Image" width="400">
-				<span style="display: block;"></span>
+                <img src="images/movieticketsonlinebooking_11zon.jpg" alt="Image" width="400">
+                <span style="display: block;"></span>
                 <a href="https://github.com/UzmaYasminSyed/MOVIE-TICKETS-BOOKING-SYSTEM/blob/main/movie%20ticket%20booking.c" target="_blank">GitHub Repo</a>
             </div>
             <div class="project-item">
@@ -710,177 +763,112 @@
                 <p>Traffic flow forecasting prediction involves using historical traffic data and machine learning models to accurately predict future traffic conditions.</p>
                 <h4>Technologies Used:</h4>
                 <p>LSTM, GRU, CNN,Python</p>
-				<img src="trafficprediction_11zon.jpg" alt="Image" width="400">
-				<span style="display: block;"></span>
+                <img src="images/trafficprediction_11zon.jpg" alt="Image" width="400">
+                <span style="display: block;"></span>
                 <a href="https://github.com/UzmaYasminSyed/TRAFFIC-PREDICTION-USING-MACHINE-LEARNING/blob/main/TRAFFIC_PREDICTION_USING_MACHINE_LEARNING.ipynb" target="_blank">GitHub Repo</a>
             </div>
-			<div class="project-item">
+            <div class="project-item">
                 <h3>HOSTEL MANAGEMENT SYSTEM</h3>
                 <p>A web application that fetches and displays current weather information for a specified city using a public API.</p>
                 <h4>Technologies Used:</h4>
                 <p>STARUML</p>
-				<img src="hostelmanagement_11zon.jpg" alt="Image" width="400">
+                <img src="images/hostelmanagement_11zon.jpg" alt="Image" width="400">
             </div>
             <div class="project-item">
                 <h3>IMAGE CAPTIONING</h3>
                 <p>A web application that fetches and displays current weather information for a specified city using a public API.</p>
                 <h4>Technologies Used:</h4>
                 <p>Python</p>
-				<img src="image captioning_11zon.jpg" alt="Image" width="400">
-				<span style="display: block;"></span>
+                <img src="images/image captioning_11zon.jpg" alt="Image" width="400">
+                <span style="display: block;"></span>
                 <a href="https://github.com/UzmaYasminSyed/IMAGE-CAPTIONING/blob/main/image_captioning.py" target="_blank">GitHub Repo</a>
             </div>
-			<div class="project-item">
+            <div class="project-item">
                 <h3>HAND GESTURES</h3>
                 <p>A web application that fetches and displays current weather information for a specified city using a public API.</p>
                 <h4>Technologies Used:</h4>
                 <p>Deep Learning</p>
-				<img src="handgestures_11zon.jpg" alt="Image" width="300">
-				<span style="display: block;"></span>
+                <img src="images/handgestures_11zon.jpg" alt="Image" width="300">
+                <span style="display: block;"></span>
                 <a href="https://github.com/UzmaYasminSyed/HAND-GESTURE-RECOGNIZATION-USING-DEEP-LEARNING/blob/main/Hand_gesture.ipynb" target="_blank">GitHub Repo</a>
             </div>
-			<div class="project-item">
+            <div class="project-item">
                 <h3>HEART FAILURE SYSTEM</h3>
                 <p>A web application that fetches and displays current weather information for a specified city using a public API.</p>
                 <h4>Technologies Used:</h4>
                 <p>Python </p>
-				<img src="heartfailure_11zon.jpg" alt="Image" width="500">
-				<span style="display: block;"></span>
+                <img src="images/heartfailure_11zon.jpg" alt="Image" width="500">
+                <span style="display: block;"></span>
                 <a href="https://github.com/UzmaYasminSyed/HEART-FAILURE-PREDICTION/blob/main/Heart_Failure_Prediction.ipynb" target="_blank">GitHub Repo</a>
             </div>
-			<div class="project-item">
+            <div class="project-item">
                 <h3>DEEP VOICE:DEEP FAKE VOICE DETECTION</h3>
                 <p>A web application that fetches and displays current weather information for a specified city using a public API.</p>
                 <h4>Technologies Used:</h4>
                 <p>Python</p>
-				<img src="deepvoice_11zon.webp" alt="Image" width="400">
-				<span style="display: block;"></span>
+                <img src="images/deepvoice_11zon.webp" alt="Image" width="400">
+                <span style="display: block;"></span>
                 <a href="https://github.com/UzmaYasminSyed/DEEP-VOICE-DEEP-FAKE-VOICE-DETECTION" target="_blank">GitHub Repo</a>
             </div>
-			<div class="project-item">
+            <div class="project-item">
                 <h3>CHEST X-RAY IMAGES-PNEUMONIA</h3>
                 <p>Chest X-ray images (pneumonia) are used in medical imaging to detect and diagnose pneumonia by analyzing lung abnormalities through AI-based image classification.</p>
                 <h4>Technologies Used:</h4>
                 <p>Python,TensorFlow, Keras, PyTorch, ResNet, DenseNet, VGG</p>
-				<img src="chestxray_11zon.jpg" alt="Image" width="400">
+                <img src="images/chestxray_11zon.jpg" alt="Image" width="400">
                 <span style="display: block;"></span>
-				<a href="https://github.com/UzmaYasminSyed/CHEST-X-RAY/blob/main/CHEST_XRAY.ipynb" target="_blank">GitHub Repo</a>
+                <a href="https://github.com/UzmaYasminSyed/CHEST-X-RAY/blob/main/CHEST_XRAY.ipynb" target="_blank">GitHub Repo</a>
             </div>
-			<div class="project-item">
+            <div class="project-item">
                 <h3>HOUSE PRICE PREDICTION. </h3>
                 <p>House price prediction is a machine learning task that estimates the value of a house based on features like size, location, and amenities.</p>
                 <h4>Technologies Used:</h4>
                 <p>Python,Linear Regression,Decision Trees,Random Forest,Mean Absolute Error (MAE),Mean Squared Error (MSE),Root Mean Squared Error (RMSE)</p>
-				<img src="house-price.jpg" alt="House Price Prediction" width="400">
-				<span style="display: block;"></span>
+                <img src="images/house-price.jpg" alt="House Price Prediction" width="400">
+                <span style="display: block;"></span>
                 <a href="https://github.com/UzmaYasminSyed/HOUSE-PRICE-PREDICTION-USING-MACHINE-LEARNING/blob/main/House_Price_Prediction.ipynb" target="_blank">GitHub Repo</a>
             </div>
-			<div class="project-item">
+            <div class="project-item">
                 <h3>FEDERATED LEARNING FOR PRIVACY-PRESERVING COVID-19 DIAGNOSIS. </h3>
                 <p>Federated learning enables privacy-preserving COVID-19 diagnosis by training AI models across decentralized medical data without sharing sensitive patient information.</p>
                 <h4>Technologies Used:</h4>
                 <p>Python</p>
-				<img src="aichcposter.png" alt="Image" width="400">
+                <img src="images/aichcposter.png" alt="Image" width="400">
             </div>
         </section>
 
 
-<!-- Font Awesome (in <head>) -->
 <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 />
 
-<style>
-  body {
-    background-color: #111; /* Optional: Dark background for contrast */
-  }
-
-  #contact {
-    padding: 60px 0;
-    text-align: center;
-    font-family: 'Segoe UI', sans-serif;
-    background: none;
-  }
-
-  #contact h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #f1c40f; /* Yellow title */
-  }
-
-  .contact-links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 60px;
-  }
-
-  .contact-links a {
-    text-decoration: none;
-    color: #f1c40f; /* Yellow text */
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 0.3s ease;
-
-  }
-
-  .contact-links a i {
-    font-size: 38px;
-    margin-bottom: 10px;
-    color: #f1c40f; /* Yellow icons */
-    transition: transform 0.3s, color 0.3s;
-  }
-
-  .contact-links a span {
-    color: #f1c40f;
-    font-weight: 500;
-  }
-
-  .contact-links a:hover {
-    transform: scale(1.1);
-  }
-
-  .contact-links a:hover i {
-    color: #ffe600; /* Lighter yellow on hover */
-  }
-
-  .contact-links a:hover span {
-    color: #ffe600;
-  }
-</style>
-
-<!-- Contact Section -->
 <section id="contact">
-  <h2>Contact Me</h2>
-  <div class="contact-links">
-    <a href="mailto:uzmayasminsyed@gmail.com" target="_blank">
-      <i class="fas fa-envelope"></i>
-      <span>Email</span>
-    </a>
-    <a href="" target="_blank">
-      <i class="fas fa-phone"></i>
-      <span>Call</span>
-    </a>
-    <a href="https://www.linkedin.com/in/syed-uzma-yasmin-96a6332bb/" target="_blank">
-      <i class="fab fa-linkedin"></i>
-      <span>LinkedIn</span>
-    </a>
-    <a href="https://github.com/UzmaYasminSyed" target="_blank">
-      <i class="fab fa-github"></i>
-      <span>GitHub</span>
-    </a>
-    <a href="resume.pdf" target="_blank">
-      <i class="fas fa-file-alt"></i>
-      <span>Resume</span>
-    </a>
-    <a href="" target="_blank">
-      <i class="fas fa-map-marker-alt"></i>
-      <span>Location</span>
-    </a>
-  </div>
+    <h2>Contact Me</h2>
+    <div class="contact-links">
+        <a href="mailto:uzmayasminsyed@gmail.com" target="_blank">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+        </a>
+        <a href="tel:+91XXXXXXXXXX" target="_blank"> <i class="fas fa-phone"></i>
+            <span>Call</span>
+        </a>
+        <a href="https://www.linkedin.com/in/syed-uzma-yasmin-96a6332bb/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/UzmaYasminSyed" target="_blank">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+        </a>
+        <a href="resume.pdf" target="_blank">
+            <i class="fas fa-file-alt"></i>
+            <span>Resume</span>
+        </a>
+        <a href="https://maps.app.goo.gl/YourLocationLink" target="_blank"> <i class="fas fa-map-marker-alt"></i>
+            <span>Location</span>
+        </a>
+    </div>
 </section>
     </main>
     <footer>
@@ -909,64 +897,30 @@
         const pauseBetweenWords = 2000; // Pause before starting to type or delete
 
         function type() {
-            const currentWord = words[(wordIndex) % words.length];
-
-            if (!isDeleting && charIndex < currentWord.length) {
-                // Typing: Add one character
-                heroTitleElement.textContent += currentWord.charAt(charIndex);
-                charIndex++;
-                setTimeout(type, speedTyping);
-            } else if (isDeleting && charIndex > 0) {
-                // Deleting: Remove one character
+            const currentWord = words[wordIndex];
+            if (isDeleting) {
                 heroTitleElement.textContent = currentWord.substring(0, charIndex - 1);
                 charIndex--;
-                setTimeout(type, speedDeleting);
             } else {
-                // Done typing or deleting current word
-                isDeleting = !isDeleting; // Toggle mode (typing to deleting, or vice versa)
-                // Pause before next action (e.g., waiting after typing before deleting)
-                setTimeout(() => {
-                    if (!isDeleting) { // If just finished deleting, move to next word
-                        wordIndex++;
-                    }
-                    type(); // Start next action
-                }, pauseBetweenWords);
+                heroTitleElement.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
             }
+
+            let typeSpeed = isDeleting ? speedDeleting : speedTyping;
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                typeSpeed = pauseBetweenWords;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                typeSpeed = speedTyping;
+            }
+
+            setTimeout(type, typeSpeed);
         }
 
-        // Start the typing animation when the page loads
         document.addEventListener('DOMContentLoaded', type);
-
-        // Active class for navigation links based on scroll position
-        const sections = document.querySelectorAll('section');
-        const navLi = document.querySelectorAll('.nav-links li a');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                // Adjust this offset based on your navbar height/preference
-                if (pageYOffset >= sectionTop - 100) { /* Offset adjusted for navbar height */
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLi.forEach(a => {
-                a.classList.remove('active');
-                if (a.getAttribute('href').includes(current)) {
-                    a.classList.add('active');
-                }
-            });
-        });
-
-        // Ensure 'home' link is active on initial load if at the very top
-        document.addEventListener('DOMContentLoaded', () => {
-            const homeLink = document.querySelector('.nav-links a[href="#home"]');
-            if (window.scrollY === 0) {
-                homeLink.classList.add('active');
-            }
-        });
-		</script>
+    </script>
 </body>
 </html>
